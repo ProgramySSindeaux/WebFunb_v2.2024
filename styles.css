@@ -1,0 +1,136 @@
+/* Estilos Globais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Cabeçalho */
+.header {
+    background-color: #201e1e;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.header .nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.header .nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main */
+.main .text-center {
+    text-align: center;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    color: #fdfdfd;
+    padding: 50px 20px;
+    background-color: #14af3b;
+    box-sizing: border-box;
+}
+
+.fundo {
+    background-image: url('imagens/fundo.jpg');
+    /* Adiciona a imagem de fundo */
+    background-size: cover;
+    /* Ajusta a imagem para cobrir toda a página */
+    background-repeat: no-repeat;
+    /* Evita que a imagem se repita */
+    background-attachment: fixed;
+    /* Mantém a imagem fixa ao rolar a página */
+    background-position: center;
+    /* Centraliza a imagem de fundo */
+    box-sizing: border-box;
+    padding: 50px 10px;
+    width: auto;
+    /* Define a largura da imagem */
+    height: max-content;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 20px;
+}
+
+.hero .logo {
+    max-width: 150px;
+    height: auto;
+}
+
+/* Content Section */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Alinha os cartões ao centro */
+    gap: 20px;
+    /* Espaçamento entre os cartões */
+    margin: 20px 0;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 300px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card .container {
+    padding: 15px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(200, 200, 200, 0.5);
+}
+
+/* Login e Registro */
+.content .login-container,
+.content .register-container {
+    margin: 20px 0;
+    padding: 50px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+}
